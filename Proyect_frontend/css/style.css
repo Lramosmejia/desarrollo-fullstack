@@ -1,0 +1,307 @@
+/* IMPORTACIONES DE GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+body{
+    padding: 30px;
+    background-image:linear-gradient(#e0e0e0, #FFFFFF)
+}
+
+/* SECTION PRINCIPAL*/
+
+header {
+    width: 100%;
+    height: 80px;
+}
+header img {
+    height: 40%;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+header nav {
+    height: 80%;
+    width: 950px;
+    float: right;
+}
+header nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin-left: 230px;
+}
+header nav ul li a {
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+header nav ul li a:hover{
+    font-weight: bold;
+    transition: all 0.5s;
+}
+#main-frame {
+    width: 100%;
+    height: 550px;
+    margin-top: 40px;
+    display: flex;
+}
+#main-frame .product{
+    width: 40%;
+    height: 100%;
+}
+#main-frame .product h3{
+    font-size: 200px;
+    line-height: 50px;
+    margin-top: 300px;
+    margin-left: 40px;
+    color: rgba(0, 0, 0, 0.19);
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.366);
+    font-family: 'Irish Grover', cursive;
+    font-weight: 600;
+}
+#main-frame img{
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 40px;
+    left: -10px;
+    width: 570px;
+}
+#main-frame .description {
+    width: 40%;
+    height: 100%;
+    color: black;
+    padding: 0px 50px;
+    font-family: 'Inter', sans-serif;
+}
+#main-frame .description h1 {
+    font-size: 60px;
+    color: black;
+    line-height: 14px;
+    font-family: 'Inter', sans-serif;
+}
+#main-frame span{
+    font-size: 40px;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 0.19);
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.366);
+    font-family: 'Irish Grover', cursive;
+}
+#main-frame h1 .subtitle{
+    font-size: 20px;
+    padding-left: 165px;
+    font-family: 'Irish Grover', cursive;
+}
+#main-frame .description p{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 200;
+}
+#main-frame .description button {
+    padding: 15px 20px;
+    background-color: #0000007d;
+    border-radius: 100px;
+    border: none;
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 18px;
+    color:black;
+    box-shadow: 0px 0px 10px 0px #ffffff7c;
+}
+
+/* SECTION SHOP OTHER SUPPLEMENTS*/
+
+#main-frame .shop_supplements{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    margin-top: -30px;
+}
+/*#main-frame .shop_supplements h2{
+    color: rgb(96, 96, 96);
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+}*/
+#main-frame .shop_supplements .shop_s{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color:rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+#main-frame .shop_supplements .shop_s img{
+    position: relative;
+    width: 110%;
+    margin: -60px auto 16px auto;
+    transform: rotate(0deg);
+}
+#main-frame .shop_supplements .shop_s span{
+    color:black;
+    font-size: 12px;
+    font-weight: 500;
+    float: none;
+    padding-left: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* SECTION ATHLETES*/
+
+#athletes{
+    width: 100%;
+    height: 550px;
+    margin-top: 40px;
+    display: flex;
+}
+#athletes .mr_olympia{
+    width: 60%;
+    height: 100%;
+}
+#athletes .mr_olympia h2{
+    font-size: 60px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+}
+#athletes .mr_olympia p{
+    font-size: 15px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+}
+#athletes .cbum{
+    width: 40%;
+    height: 100%;
+}
+#athletes .cbum img{
+    position:relative;
+    top: 40px;
+    left: 10px;
+    width: 500px;
+}
+/*FOTTER*/
+
+footer{
+    right: 0px ;
+    left: initial;
+    width: auto;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.19);
+}
+footer .social_media {
+    color: white;
+    font-size: 28px;
+    padding: 15px 32px;
+    transition: all 1s;
+}
+footer .social_media i:hover{
+    color: #e33d31;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+ 
+/*RESPONSIVE DESING SECTION MAIN-FRAME*/
+
+@media (max-width: 1400px){
+    #main-frame .product{
+        width: 55%;
+    }
+    #main-frame .description{
+        width: 70%;
+    }
+    #main-frame .shop_supplements{
+        width: 35%;
+    }
+    #main-frame .shop_s{
+        width: 35%;
+    }    
+    }
+    
+    @media (max-width: 1200px){
+    #main-frame .product{
+        width: 50%;
+    }
+    #main-frame .description{
+        width: 35%;
+    }
+    #main-frame .shop_supplements{
+        width: 35%;
+    }
+    #main-frame .shop_s{
+        width: 35%;
+    }  
+    }
+    @media (max-width: 1000px){
+    #main-frame{
+        display: block;
+        height: 600px;
+        text-align: center;
+    }
+    #main-frame .product{
+        width: 80%;
+        height: auto;
+    }
+    #main-frame .product img {
+        display: inline-flex;
+        width: 50%;
+        height: auto;
+        padding-left: 180px;
+        margin-top: 90px;
+
+    }
+    #main-frame .description{
+        display: contents;
+        width: 100%;
+        height: 40%;
+        text-align: center;
+    }
+    #main-frame .shop_supplements{
+        display:inline-flex;
+        width: 50%;
+        height: 50%;
+    }
+    #main-frame .shop_s{
+        width: 10%;
+    } 
+    }
+    
+ /*RESPONSIVE DESING SECTION ATHLETES*/
+
+@media (max-width: 1400px){
+    #athletes .mr_olympia{
+        width: 55%;
+    }
+    #athletes .cbum{
+        width: 35%;
+    }
+    }
+    
+    @media (max-width: 1200px){
+    #athletes .mr_olympia{
+        width: 50%;
+    }
+    #athletes .cbum{
+        width: 35%;
+    }
+    }
+    @media (max-width: 1000px){
+    #athletes{
+        display: block;
+         height: 630px;
+        text-align: center;
+    }
+    #athletes .mr_olympia{
+        width: 100%;
+        height: auto;
+    }
+    #athletes .cbum{
+        width: 100%;
+        height: 40%;
+    }
+    }
