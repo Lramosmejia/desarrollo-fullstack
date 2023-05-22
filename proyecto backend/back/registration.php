@@ -8,7 +8,9 @@ if (isset($_POST['registration'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-   // $sql = mysqli_query($conexion, "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')");//
+    $password_en = base64_encode($password);
+
+    $sql = mysqli_query($conexion, "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password_en')");
 
    header('location: ../index.html');
 
