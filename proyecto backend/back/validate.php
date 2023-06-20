@@ -15,7 +15,7 @@ if (isset($_POST['login'])) {
     echo $cantidad;
 
     if ($cantidad == 1) {
-        header('location:../aplication/home.php');
+        header('location:../raw_nutrition/index.php');
     }else{
        header('location:../index.html') ;
     }
